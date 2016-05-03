@@ -388,7 +388,7 @@ fitted.MArrayLM <- function(object,design=object$design,...)
 #	Gordon Smyth
 #	29 November 2005
 {
-	object$coefficients %*% t(object$design)
+	object$coefficients %*% t(design)
 }
 
 residuals.MArrayLM <- function(object,y,...)
